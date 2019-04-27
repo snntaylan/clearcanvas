@@ -1,0 +1,102 @@
+@import url('https://fonts.google.com/specimen/Open+Sans');
+.SiteHeader {
+	margin: 0;
+	background: weight;
+	font-family: 'Work Sans', sans-serif;
+    font-weight: 10;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .MenuWrapper {
+    display: none;
+  }
+
+  
+  
+}
+@media screen and (max-width: 300px) {
+  .Hamburger {
+      display: block;
+  }
+  }
+
+
+.Logo {
+    /* padding: 1em 20px 2em; */
+    position: relative;
+    float: left;
+    width:  100px;
+    /* background-position: 50% 50%; */
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.Navigation {
+    /* display: inline; */
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.Hamburger {
+    background-color: red;
+}
+
+.Banner {
+    position: relative;
+    display: inline-block;
+}
+
+.Banner-image {
+    border-radius: 12px;
+    display: block;
+    /* margin: 1em 20px 2em; */
+    width: 80%;
+}
+
+
+
+
+.Menu-navigation:hover{
+  
+}
+
+/* .MenuWrapper {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  text-align: left;
+} */
+
+
+.Banner-content {
+  /* border-radius: 8px;
+  padding: 50px;
+  margin: 20px;
+  background: #428fc3;
+  position: fixed;
+  left: 80px;
+  right: 50px;
+  text-decoration: none; */
+
+    border-radius: 8px;
+    padding: 50px;
+    background: #428fc3;
+    position: absolute;
+    bottom: -50px;
+    right: 200px;
+}
+
+.first {
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+.second {
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
