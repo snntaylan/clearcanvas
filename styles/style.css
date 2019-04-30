@@ -1,102 +1,198 @@
-@import url('https://fonts.google.com/specimen/Open+Sans');
+@import url("https://fonts.google.com/specimen/Open+Sans");
+body {
+  height: 100%;
+  margin: 20px;
+  font-family: "Open Sans", serif;
+}
 .SiteHeader {
-	margin: 0;
-	background: weight;
-	font-family: 'Work Sans', sans-serif;
-    font-weight: 10;
-    overflow: hidden;
+  margin: 0;
+  background: weight;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 10;
+  overflow: hidden;
+  width: 80%;
+  margin-bottom: 25px;
 }
 
 @media screen and (max-width: 600px) {
   .MenuWrapper {
+    display: block;
+  }
+  .Banner-content {
+    border-radius: 8px !important;
+    padding: 0 !important;
+    background: #fff !important;
+    position: absolute !important;
+    bottom: auto !important;
+    right: auto !important;
+  }
+  .first {
+    color: black !important;
+    font-size: 20px !important;
+  }
+  .second {
+    color: black !important;
+    font-size: 12px !important;
+  }
+
+  .Hamburger {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 14px;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 1px;
+    float: right;
+    z-index: 2;
+  }
+  .hamburger-bar {
+    background-color: #ffffff;
+    height: 2px;
+    width: 100%;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    transition: all 0.25s ease-in-out;
+  }
+
+  .hamburger-bar-2 {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .hamburger-bar-3 {
+    bottom: 0;
+  }
+
+  .Menu.open .hamburger-bar-1 {
+    transform: translateY(7px) translateY(-50%) rotate(45deg);
+  }
+
+  .Menu.open .hamburger-bar-2 {
+    opacity: 0;
+  }
+
+  .Menu.open .hamburger-bar-3 {
+    transform: translateY(-7px) translateY(50%) rotate(-45deg);
+  }
+
+  .Navigation {
     display: none;
   }
 
-  
-  
+  .Menu-overlay {
+    display: block !important;
+    background-color: #000000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Menu-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
 }
-@media screen and (max-width: 300px) {
-  .Hamburger {
-      display: block;
-  }
-  }
-
-
-.Logo {
-    /* padding: 1em 20px 2em; */
-    position: relative;
-    float: left;
-    width:  100px;
-    /* background-position: 50% 50%; */
-    background-repeat:   no-repeat;
-    background-size:     cover;
+.Menu-overlay {
+  display: none;
 }
 
 .Navigation {
-    /* display: inline; */
-    text-align: right;
-    font-family: 'Open Sans', sans-serif;
+  color: white;
+  /* padding: 12px; */
+}
+
+.Navigation a {
+  margin-left: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+.Navigation a:visited {
+  color: black;
+}
+
+/* mouse over link */
+.Menu-navigation a:hover {
+  color: rgb(202, 196, 196);
+}
+
+.Logo {
+  position: relative;
+  float: left;
+  width: 125px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Navigation {
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
 }
 
 .Hamburger {
-    background-color: red;
+  background-color: rgb(59, 55, 55);
 }
 
 .Banner {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .Banner-image {
-    border-radius: 12px;
-    display: block;
-    /* margin: 1em 20px 2em; */
-    width: 80%;
+  border-radius: 12px;
+  display: block;
+  width: 80%;
 }
 
-
-
-
-.Menu-navigation:hover{
-  
+.Menu-navigation {
+  color: white;
+  display: grid;
+  padding: 12px;
 }
 
-/* .MenuWrapper {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  background: transparent;
-  text-align: left;
-} */
+.Menu-navigation a {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.Menu-navigation a:visited {
+  color: white;
+}
 
+/* mouse over link */
+.Menu-navigation a:hover {
+  color: rgb(202, 196, 196);
+}
 
 .Banner-content {
-  /* border-radius: 8px;
+  border-radius: 8px;
   padding: 50px;
-  margin: 20px;
   background: #428fc3;
-  position: fixed;
-  left: 80px;
-  right: 50px;
-  text-decoration: none; */
-
-    border-radius: 8px;
-    padding: 50px;
-    background: #428fc3;
-    position: absolute;
-    bottom: -50px;
-    right: 200px;
+  position: absolute;
+  bottom: -50px;
+  right: 200px;
 }
 
 .first {
-    color: aliceblue;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
 }
 .second {
-    color: aliceblue;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
 }

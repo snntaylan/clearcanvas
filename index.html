@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="de-DE">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1"
+    />
+    <title>Clear Canvas - Frontend Test</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
-	<title>Clear Canvas - Frontend Test</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on"/><![endif]-->
 
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+    <meta name="format-detection" content="telephone=no" />
 
-	<meta name="format-detection" content="telephone=no">
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+  </head>
 
-	<link rel="stylesheet" href="styles/style.css" type="text/css" media="all" />
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <body>
+    <header class="SiteHeader">
+      <a href="/" class="Logo"><img src="assets/images/logo.svg"/></a>
 
-</head>
+      <nav class="Navigation">
+        <a href="#">Über uns</a>
+        <a href="#">Neues</a>
+        <a href="#">Karriere</a>
+        <a href="#">Kontakt</a>
+      </nav>
 
-<body>
-	<header class="SiteHeader">
-		<a href="/" class="Logo"><img src="assets/images/logo.svg" /></a>
+      <div class="MenuWrapper">
+        <div class="Menu">
+          <a class="Menu-link">
+            <span class="Hamburger">
+              <span class="hamburger-bar hamburger-bar-1"></span>
+              <span class="hamburger-bar hamburger-bar-2"></span>
+              <span class="hamburger-bar hamburger-bar-3"></span> </span
+          ></a>
+        </div>
 
-		<nav class="Navigation">
-			<a href="#">Über uns</a>
-			<a href="#">Neues</a>
-			<a href="#">Karriere</a>
-			<a href="#">Kontakt</a>
-		</nav>
-
-		<div class="MenuWrapper">
-			<a class="Menu"><span class="Hamburger"></span></a>
-			<div class="Menu-overlay">
-				<nav class="Menu-navigation">
-					<a href="#">Über uns</a>
-					<a href="#">Neues</a>
-					<a href="#">Karriere</a>
-					<a href="#">Kontakt</a>
-					<a class="Menu-close">schließen</a>
-				</nav>
-			</div>
-		</div>
-	</header>
-	<main>
-		<div class="Banner">
-			<img class="Banner-image" src="assets/images/bird.jpg" alt="Bird" />
-			<div class="Banner-content">
-				<span class="first">Hier steht ein toller Beispielsatz.</span>
-				<br>
-				<span class="second">Hier geht's zur nächsten Seite</span>
-			</div>
-		</div>
-	</main>
-	<script type="text/javascript" src="scripts/site.min.js?ver=123"></script>
-</body>
-
+        <div class="Menu-overlay">
+          <nav class="Menu-navigation">
+            <a href="#">Über uns</a>
+            <a href="#">Neues</a>
+            <a href="#">Karriere</a>
+            <a href="#">Kontakt</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="Banner">
+        <img class="Banner-image" src="assets/images/bird.jpg" alt="Bird" />
+        <div class="Banner-content">
+          <span class="first">Hier steht ein toller Beispielsatz.</span>
+          <br />
+          <span class="second">Hier geht's zur nächsten Seite</span>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
 </html>
